@@ -1,0 +1,99 @@
+:root{
+    --color-midnight: #425e7b;
+  --color-saffron: #fdd400;
+  --color-nightfall: #1b3b59;
+  --color-slate: #ffffff;
+  --color-ash: #bdc3c7;
+}
+.darkmode {
+  --color-midnight: #070b1d;
+  --color-saffron: #0071ff;
+  --color-nightfall: #708090;
+  --color-slate: #101425;
+  --color-ash: #a4a5b8;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    /* color: white;
+    background-color: black; */
+}
+body {
+  background: var(--color-slate);
+  color: var(--color-nightfall);
+  transition: 0.3s;
+}
+
+nav {
+  width: 100%;
+  padding: 1rem 5%;
+  border-bottom: 1px solid var(--color-ash);
+  backdrop-filter: blur(15px);
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  width: 30px;
+  height: 30px;
+}
+.logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--color-saffron);
+  letter-spacing: 1px;
+  margin-right: auto;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin-right: 30px;
+}
+
+.nav-links li a {
+  position: relative;
+  font-size: 1.05rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--color-nightfall);
+  transition: 0.3s;
+}
+.nav-links li a:hover {
+  color: var(--color-saffron);
+  text-shadow: 0 0 10px var(--color-saffron);
+}
+
+.btns {
+  display: flex;
+}
+
+.btn {
+  padding: 0.5rem 1.5rem;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 1rem;
+  background: var(--color-saffron);
+  color: #425e7b;
+  box-shadow: 0 0 15px var(--color-saffron);
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #425e7b;
+  color: var(--color-saffron);
+  box-shadow: 0 0 15px var(--color-saffron);
+}
